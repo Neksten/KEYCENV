@@ -180,6 +180,10 @@ body {
     .main__item {
         margin: 0 0 20px 0;
     }
+    .main__item {
+        width: 100%;
+    }
     .main__btn {
+        width: 100%;
     }
 }
