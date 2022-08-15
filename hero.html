@@ -23,16 +23,37 @@
                 </div>
                 <div class="main__buttons-row">
                     <div class="main__item">
-                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-1 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Управление участниками</a>
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-1 text-center">Открыть</a>
                     </div>
                     <div class="main__item">
-                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-2 text-center">Логи</a>
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-2 text-center">закрыть</a>
+                    </div>
+                </div>
+                <div class="main__buttons-row">
+                    <div class="main__item">
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-3 text-center">Заблокировать</a>
+                    </div>
+                    <div class="main__item">
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-4 text-center">разблокировать</a>
+                    </div>
+                </div>
+                <div class="main__buttons-row">
+                    <div class="main__item">
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-5 text-center" data-bs-toggle="modal" data-bs-target="#participants">Управление участниками</a>
+                    </div>
+                    <div class="main__item">
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-6 text-center">Логи</a>
+                    </div>
+                </div>
+                <div class="main__buttons-row">
+                    <div class="main__item">
+                        <a href="" class="btn btn-lg text-uppercase main__btn main__btn-5 text-center" data-bs-toggle="modal" data-bs-target="#card">Привязать/отвзязать карту</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="participants" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -65,6 +86,42 @@
                         <h6 class="initials">Петров Пётр Петрович - </h6>
                         <button class="btn btn-sm text-uppercase main__user-btn text-center">Удалить</button>
                     </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Сохранить</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="card" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Работа с картами доступа</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="main__card-menu menu">
+                    <button class="btn btn-lg text-uppercase menu__btn main__btn-7 text-center">Отвязать</button>
+                    <button class="btn btn-lg text-uppercase menu__btn main__btn-6 text-center">Привязать</button>
+                    <div class="accordion" id="menu-card">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Посмотреть даты привязки
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#menu-card">
+                            <div class="accordion-body">
+                              <p class="menu__data">25.01.22</p>
+                              <p class="menu__data">25.01.22</p>
+                              <p class="menu__data">25.01.22</p>
+                              <p class="menu__data">25.01.22</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="modal-footer">
