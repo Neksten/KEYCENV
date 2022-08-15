@@ -1,0 +1,159 @@
+:root {
+    --color1: #50586C;
+    --color2: #f7f8fa;
+    --color3: #DCE2F0;
+    --color4: #2d323d;
+    --color5: #db4d4d;
+    --color6: #752424;
+}
+/* Цвета */
+.color1 {
+    color: var(--color1);
+}
+.color2 {
+    color: var(--color2);
+}
+.color3 {
+    color: var(--color3);
+}
+.color4 {
+    color: var(--color4);
+}
+.color5 {
+    color: var(--color5);
+}
+body {
+    background-color: var(--color3);
+}
+.wrapper {
+    overflow: hidden;
+}
+/* Вход */
+.entrance {
+    padding: 50px;
+}
+.entrance__image {
+    margin: 0 0 70px 0;
+}
+.entrance__row {
+}
+.entrance__btn-1 {
+    border: 1px solid var(--color1);
+    width: 200px;
+    margin: 0 48px 0 0;
+}
+.entrance__btn-1:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color4);
+}
+.entrance__btn-2 {
+    border: 1px solid var(--color1);
+    width: 200px;
+}
+.entrance__btn-2:hover {
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    color: var(--color2);
+}
+/* Авторизация */
+.authorization {
+    padding: 50px 0;
+}
+.authorization__btn-1 {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color4);
+}
+.form-label {
+    border: 0;
+}
+.form-control:focus {
+    border-color: var(--color4);
+    box-shadow: 0 10px 28px rgba(51, 51, 51, 0.1), 0 10px 10px rgba(151, 151, 151, 0.1);
+}
+/* Регистрация */
+.registration {
+    padding: 50px 0;
+}
+/* Главная */
+.main {
+    padding: 50px 0;
+}
+.main__btn {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color4);
+}
+.main__buttons-row {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main__item {
+    display: inline-block;
+}
+.main__btn {
+}
+/* .main__users {
+    max-width: 400px;
+    margin: 0 auto;
+} */
+.main__users-item {
+    display: flex;
+}
+.main__users-item:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+.initials {
+    margin: 0 10px 0 0;
+}
+.main__user-btn {
+    background-color: var(--color5);
+    color: var(--color2);
+    border: 1px solid var(--color6);
+}
+.main__user-btn:hover {
+    color: var(--color6);
+    border: 1px solid var(--color6);
+}
+@media (min-width: 576px) {
+    /* Главная */
+    .main__item:nth-child(odd) {
+        margin: 0 20px 0 0;
+    }
+}
+@media (max-width: 576px) {
+    /* Вход */
+    .entrance__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .entrance__btn-1 {
+        margin: 0 0 30px 0;
+    }
+    .entrance__btn-2 {
+        border-color: 1px solid var(--color1);
+        width: 200px;
+    }
+    /* Авторизация */
+    .authorization {
+        padding: 20px 0;
+    }
+    /* Регистрация */
+    .registration {
+        padding: 20px 0;
+    }
+    /* Главная */
+    .main__buttons-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__item {
+        margin: 0 0 20px 0;
+    }
+    .main__btn {
+    }
+}
